@@ -1,6 +1,6 @@
 # 🎨 ColorBench
 
-[**📖 Paper**](todo) | [**🤗 Dataset**](https://huggingface.co/datasets/umd-zhou-lab/ColorBench)
+[**📖 Paper**](https://arxiv.org/abs/2504.10514) | [**🤗 Dataset**](https://huggingface.co/datasets/umd-zhou-lab/ColorBench)
 
 <p align="center" width="40%">
 <a ><img src="assets/image.png" alt="overview" style="width: 40%; min-width: 300px; display: block; margin: auto;"></a>
