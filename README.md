@@ -1,12 +1,12 @@
 # 🎨 ColorBench
 
-[**📖 Paper**](todo) | [**🤗 Dataset**](https://huggingface.co/datasets/umd-zhou-lab/ColorBench)
+[**📖 Paper**](https://arxiv.org/abs/2504.10514) | [**🤗 Dataset**](https://huggingface.co/datasets/umd-zhou-lab/ColorBench)
 
 <p align="center" width="40%">
 <a ><img src="assets/image.png" alt="overview" style="width: 40%; min-width: 300px; display: block; margin: auto;"></a>
 </p>
 
-This repo contains the official evaluation code and dataset for the paper ["ColorBench: Can VLMs See and Understand the Colorful World? A Comprehensive Benchmark for Color Perception, Reasoning, and Robustness"](todo)
+This repo contains the official evaluation code and dataset for the paper ["ColorBench: Can VLMs See and Understand the Colorful World? A Comprehensive Benchmark for Color Perception, Reasoning, and Robustness"](https://arxiv.org/abs/2504.10514)
  
 
 ## Highlights
