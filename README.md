@@ -89,20 +89,16 @@ python3 evaluation/metrics_eval.py --result_dir=RESULT_DIR --save_dir=SAVE_DIR
 ```
 The final result will be saved in folder ```SAVE_DIR```. 
 
-[//]: # (## Citation)
+## Citation
 
-[//]: # (```bibtex)
-
-[//]: # (@article{MMBench,)
-
-[//]: # (    author  = {Yuan Liu, Haodong Duan, Yuanhan Zhang, Bo Li, Songyang Zhang, Wangbo Zhao, Yike Yuan, Jiaqi Wang, Conghui He, Ziwei Liu, Kai Chen, Dahua Lin},)
-
-[//]: # (    journal = {arXiv:2307.06281},)
-
-[//]: # (    title   = {MMBench: Is Your Multi-modal Model an All-around Player?},)
-
-[//]: # (    year    = {2023},)
-
-[//]: # (})
-
-[//]: # (```)
+```bibtex
+@misc{liang2025colorbenchvlmsunderstandcolorful,
+      title={ColorBench: Can VLMs See and Understand the Colorful World? A Comprehensive Benchmark for Color Perception, Reasoning, and Robustness}, 
+      author={Yijun Liang and Ming Li and Chenrui Fan and Ziyue Li and Dang Nguyen and Kwesi Cobbina and Shweta Bhardwaj and Jiuhai Chen and Fuxiao Liu and Tianyi Zhou},
+      year={2025},
+      eprint={2504.10514},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2504.10514}, 
+}
+```
