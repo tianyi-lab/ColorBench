@@ -4,7 +4,7 @@ import os
 sys.path.insert(0, os.getcwd())
 from utils.path_utils import *
 
-CACHE_DIR, ROOT_DIR, _ = set_root_folder()
+CACHE_DIR = set_root_folder()
 
 os.environ["HF_HOME"] = CACHE_DIR
 os.environ["HF_DATASETS_CACHE"] = CACHE_DIR

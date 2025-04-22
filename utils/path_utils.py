@@ -2,8 +2,10 @@ import os
 
 
 def set_root_folder():
-    CACHE_DIR = "/fs/nexus-projects/wilddiffusion/cache"
-    ROOT_DIR = '/fs/nexus-scratch/yliang17/Research/VLM/ColorBench'
-    IMAGE_FOLDER = '/fs/nexus-scratch/yliang17/Research/VLM/cases_study/images/cvb'
+    CACHE_DIR = "YOUR_HF_CACHE_FOLDER"
+    if not os.path.exists(CACHE_DIR):
+        print(f"Not valid cache folder path: {CACHE_DIR}")
+        CACHE_DIR = os.path.expanduser('~')
+        print(f"Setting cache folder path to home directory: {CACHE_DIR}")
 
-    return CACHE_DIR, ROOT_DIR, IMAGE_FOLDER
+    return CACHE_DIR

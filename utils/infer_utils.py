@@ -6,8 +6,6 @@ from typing import List, Dict, Tuple, Optional
 import torch.nn.functional as F
 from .path_utils import *
 
-_, ROOT_FOLDER, _ = set_root_folder()
-
 from datasets import load_dataset
 
 

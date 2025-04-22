@@ -81,6 +81,12 @@ GEMINI_API_KEY="YOUR_API_KEY"
 GPT4O_API_KEY="YOUR_API_KEY"
 ```
 
+The cache folder for models and dataset can be modified in [path_utils.py](utils/path_utils.py). If not changed, the cache folder path defaults to the home directory.”:
+
+```python
+CACHE_DIR = "YOUR_HF_CACHE_FOLDER"
+```
+
 ### Evaluation Results
 We provide script [metrics_eval.py](evaluation/metrics_eval.py) to run evaluation metrics based on the inferenced resultsYou can run this command to get the final result:
 
