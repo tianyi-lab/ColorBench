@@ -53,7 +53,6 @@ def load_data(data_type: str, root_dir: str='', ):
     # load data
     if data_type not in ('json',):
         # hf dataset
-        # TODO: remove huggingface name
         eval_dataset = load_dataset("umd-zhou-lab/ColorBench", split='test')
     else:
         # json

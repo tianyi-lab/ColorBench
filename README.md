@@ -49,14 +49,12 @@ pip3 install -r requirements.txt
 pip install flash-attn==2.7.3 --no-build-isolation
 ```
 
-### View Dataset
-We release ColorBench on Huggingface, which more than 5,800 image-text pairs. You can download and view the dataset from Huggingface by the following command:
+### Download Dataset
+We release ColorBench on [Huggingface](https://huggingface.co/datasets/umd-zhou-lab/ColorBench), which more than 5,800 image-text pairs. You can download and view the dataset from Huggingface by the following command:
 
-```python
-from datasets import load_dataset
-
-# Evaluation samples
-print(dataset["test"][0])
+```bash
+curl -X GET \
+     "https://datasets-server.huggingface.co/rows?dataset=umd-zhou-lab%2FColorBench&config=default&split=test&offset=0&length=100"
 ```
 
 ### Inference with Models
