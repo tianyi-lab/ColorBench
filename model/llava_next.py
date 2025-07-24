@@ -26,7 +26,7 @@ warnings.filterwarnings("ignore")
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 torch.manual_seed(53)
-base_prompt = "USER: You'll be given an image, an instruction and some options. You have to select the correct one. Do not explain your reasoning. Answer with only the letter that corresponds to the correct option. \n"
+base_prompt = "USER: You'll be given an image, an instruction and some options. You have to select the correct one. Do not explain your reasoning. Answer with only the letter that corresponds to the correct option without parenthesis. \n"
 cot_prompt = "USER: You'll be given an image, an instruction and some options. You have to select the correct one. Only one option is correct. \nThink step by step before answering. Then conclude with the letter that corresponds to the correct option. Make sure the option letter is in the parentheses like (X). Do not include ( or ) in the response except for the answer.\n"
 
 

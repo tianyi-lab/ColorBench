@@ -234,7 +234,10 @@ if __name__ == '__main__':
             image, pixel_values = load_image(datatype=datatype, data=data, )
 
             if m_method is None:
-                prompt = base_prompt + data["prompt"]
+                if 'Extraction' in data['task']:
+                    prompt = base_prompt + data["prompt"]
+                else:
+                    prompt = data["prompt"] + base_prompt
             else:
                 # chain of thoughts
                 prompt = cot_prompt + data["prompt"]

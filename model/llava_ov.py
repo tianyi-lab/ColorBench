@@ -32,6 +32,8 @@ torch.manual_seed(53)
 
 conv_template = "qwen_1_5"
 base_prompt = "USER: You'll be given an image, an instruction and some options. You have to select the correct one. Do not explain your reasoning. Answer with only the letter that corresponds to the correct option.\n"
+base_prompt1 = "USER: You'll be given an image, an instruction and some options. You have to select the correct one. Do not explain your reasoning. Answer with only the letter that corresponds to the correct option. Do not repeat the entire answer. <image>\n"
+base_prompt2 = "USER: You'll be given an image. Answer the question directly with the final number. Do not explain your reasoning. <image>\n"
 cot_prompt = "USER: You'll be given an image, an instruction and some options. You have to select the correct one. \nThink step by step before answering. Then conclude with the letter that corresponds to the correct option. Make sure the option letter is in the parentheses like (X). Do not include ( or ) in the response except for the answer.\n"
 
 
@@ -61,9 +63,9 @@ def load_image(datatype: str, data: Dict, device: str, model, image_processor):
     return image, image_sizes
 
 
-def prepare_prompt(d_prompt: str, m_method: Optional[str]=None):
+def prepare_prompt(d_prompt: str, m_method: Optional[str]=None, base_prompt=base_prompt1):
     if m_method is None:
-        prompt = base_prompt + d_prompt
+        prompt = base_prompt + d_prompt + "\nASSISTANT:"
     else:
         # chain of thoughts
         prompt = cot_prompt + d_prompt
@@ -81,7 +83,7 @@ def prepare_model_input(prompt: str, tokenizer, device: str):
     return input_ids
 
 
-def process_output(generation_output, tokenizer, update_ans_ids: bool = False, model_path='llava_ov_7b', m_method=None):
+def process_output(generation_output, tokenizer,model_path='llava_ov_7b', m_method=None):
     # replied answer
     outputs = generation_output.sequences[0].detach().cpu()
     decode_res = tokenizer.batch_decode(outputs, skip_special_tokens=True)
@@ -141,7 +143,11 @@ if __name__ == '__main__':
             image, image_sizes = load_image(datatype=datatype, data=data, device=device, model=model, image_processor=image_processor)
 
             # prepare prompt
-            prompt = prepare_prompt(d_prompt=data["prompt"], m_method=m_method)
+            if 'Illusion' in data['task']:
+                base_prompt = base_prompt1
+            else:
+                base_prompt = base_prompt2
+            prompt = prepare_prompt(d_prompt=data["prompt"], m_method=m_method, base_prompt=base_prompt)
 
             # tokenize input
             input_ids = prepare_model_input(prompt=prompt, tokenizer=tokenizer, device=device)

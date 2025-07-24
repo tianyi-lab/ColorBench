@@ -1,8 +1,7 @@
 import json
 import re
 import torch
-import copy
-from typing import List, Dict, Tuple, Optional
+from typing import List, Dict
 import torch.nn.functional as F
 from .path_utils import *
 
