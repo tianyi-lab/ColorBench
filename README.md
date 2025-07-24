@@ -49,7 +49,7 @@ pip3 install -r requirements.txt
 pip install flash-attn==2.7.3 --no-build-isolation
 ```
 
-Install [Eagle1](https://github.com/NVlabs/EAGLE/blob/main/Eagle1/README.md#install) and [LLaVA](https://github.com/haotian-liu/LLaVA) in the directory follow the instructions in the official repo.
+Install [Eagle1](https://github.com/NVlabs/EAGLE/blob/main/Eagle1/README.md#install) and [LLaVA](https://github.com/haotian-liu/LLaVA) in the directory follow the instructions in the official repos.
 
 ### Download Dataset
 We release ColorBench on [Huggingface](https://huggingface.co/datasets/umd-zhou-lab/ColorBench), which more than 5,800 image-text pairs. You can download and view the dataset from Huggingface by the following command:
