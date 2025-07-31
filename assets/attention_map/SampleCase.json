@@ -1,0 +1,90 @@
+[
+    {
+        "id": 0,
+        "type": "perception",
+        "new_image": "0.jpg",
+        "image_url": "https://www.color-meanings.com/wp-content/uploads/2022/02/The-Amazon.jpeg",
+        "filename": "0.jpg",
+        "question": "What color does not exist on the trees in this image?",
+        "prompt": "What color does not exist on the trees in this image? Select from the following choices. (A) Black (B) Yellow (C) Blue (D) Green",
+        "choices": [
+            "Black",
+            "Yellow",
+            "Blue",
+            "Green"
+        ],
+        "answer": "(C)",
+        "task": "existence"
+    },
+    {
+        "id": 1,
+        "type": "perception",
+        "new_image": "1.jpg",
+        "image_url": "AI generate",
+        "filename": "1.jpg",
+        "question": "What is the color of the river in this image?",
+        "prompt": "What is the color of the river in this image? Select from the following choices. (A) Black (B) Green (C) White (D) Yellow (E) No answer",
+        "choices": [
+            "Black",
+            "Green",
+            "White",
+            "Yellow",
+            "No answer"
+        ],
+        "answer": "(E)",
+        "task": "recognition"
+    },
+    {
+        "id": 2,
+        "type": "perception",
+        "new_image": "2.jpg",
+        "image_url": "AI generate",
+        "filename": "2.jpg",
+        "question": "What is the color of the banana in this image?",
+        "prompt": "What is the color of the banana in this image? Select from the following choices. (A) Red (B) Green (C) Yellow (D) Black (E) No answer",
+        "choices": [
+            "Red",
+            "Green",
+            "Yellow",
+            "Black",
+            "No answer"
+        ],
+        "answer": "(E)",
+        "task": "existence"
+    },
+    {
+        "id": 3,
+        "type": "perception",
+        "new_image": "3.jpg",
+        "image_url": "AI generate",
+        "filename": "3.jpg",
+        "question": "which object has a color of pink in this image?",
+        "prompt": "which object has a color of pink in this image? Select from the following choices. (A) Human (B) Building (C) Apple (D) Sky (E) No answer",
+        "choices": [
+            "Human",
+            "Building",
+            "Apple",
+            "Sky",
+            "No answer"
+        ],
+        "answer": "(E)",
+        "task": "recognition"
+    },
+    {
+        "id": 4,
+        "type": "perception",
+        "new_image": "4.jpg",
+        "image_url": "ICKK17K",
+        "filename": "4.jpg",
+        "question": "What object has only red color in this image?",
+        "prompt": "What object has only red color in this image? Select from the following choices. (A) Train (B) Women's jacket (C) Women's Cap (D) Subway Divider",
+        "choices": [
+            "Train",
+            "Women's jacket",
+            "Women's Cap",
+            "Subway Divider"
+        ],
+        "answer": "(C)",
+        "task": "recognition"
+    }
+]

@@ -3,6 +3,8 @@
 <p align="center" width="40%">
 <a ><img src="assets/image.png" alt="overview" style="width: 40%; min-width: 300px; display: block; margin: auto;"></a>
 </p>
+
+[**📖 Paper**](todo) | [**📚HuggingFace Dataset**](https://huggingface.co/datasets/umd-zhou-lab/ColorBench)
 This repo contains the official evaluation code and dataset for the paper "ColorBench: Can VLMs See and Understand the Colorful World? A Comprehensive Benchmark for Color Perception, Reasoning, and Robustness"<br>
 
 ## Highlights
@@ -49,7 +51,7 @@ pip3 install -r requirements.txt
 pip install flash-attn==2.7.3 --no-build-isolation
 ```
 
-Install [Eagle1](https://github.com/NVlabs/EAGLE/blob/main/Eagle1/README.md#install) and [LLaVA](https://github.com/haotian-liu/LLaVA) in the directory follow the instructions in the official repo.
+Install [Eagle1](https://github.com/NVlabs/EAGLE/blob/main/Eagle1/README.md#install) and [LLaVA](https://github.com/haotian-liu/LLaVA) in the directory follow the instructions in the official repos.
 
 ### Download Dataset
 We release ColorBench on [Huggingface](https://huggingface.co/datasets/umd-zhou-lab/ColorBench), which more than 5,800 image-text pairs. You can download and view the dataset from Huggingface by the following command:
